@@ -1,0 +1,74 @@
+.login__background {
+    border: 1px solid #eee;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.login_auth_page {
+    margin: 130px auto 0px auto;
+    max-width: 450px;
+    height: 350px;
+    position: relative;
+    padding: 15px;
+}
+
+.login_auth_page .login__button {
+    padding: 3px 24px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: rgb(95, 157, 195);
+    border: 1px solid rgb(95, 157, 195);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login_auth_page .login__button:hover {
+    color: rgb(95, 157, 195);
+    border: 1px solid rgb(95, 157, 195);
+    background-color: #fff;
+}
+
+.get__started {
+    float: right;
+    margin: 30px 60px 0px 0px;
+}
+
+.get__started .button {
+    border: 1px solid rgb(95, 157, 195);
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+    color: rgb(95, 157, 195);
+    text-decoration: none;
+}
+
+.get__started .button:hover {
+    background-color: rgb(95, 157, 195);
+    border: 1px solid rgb(95, 157, 195);
+    
+}
+
+.get__started .button a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    outline: none;
+}
+
+@media (max-width: 760px) {
+    .login__background {
+        display: none;
+    }
+    .get__started {
+        text-align: center
+    }
+}
+
+@media (max-width: 350px) {
+    .get__started {
+        text-align: center;
+        margin: 40px 20px 0px 0px;
+    }
+}
