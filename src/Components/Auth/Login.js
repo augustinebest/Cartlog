@@ -30,6 +30,10 @@ class Login extends React.Component {
         this.canSubmit();
     }
 
+    onDismiss = () => {
+        this.setState({ visible: false });
+    }
+
     canSubmit = () => {
         const { email, password } = this.state;
         console.log(email, password);
@@ -67,6 +71,19 @@ class Login extends React.Component {
                         loading: false,
                         color: 'success'
                     })
+
+                    if(result.user_data.store_activated === 'true') {
+                        // the user has setup his store
+                        sessionStorage.setItem('user', JSON.stringify(result.user_data));
+                        // this.$router.push('/store/category')
+                    }
+                    else {
+                        // take the user to create a store for his account
+                        sessionStorage.setItem('user', JSON.stringify(result.token));
+                        // this.$session.set("nextPage", '/store/create')
+                        // this.$router.push('/store/create')
+                    }
+
                 } else if(result.message === 'failed') {
                     this.setState({
                         error: 'Your email or Password is incorrect',
