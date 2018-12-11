@@ -14,12 +14,26 @@
 }
 
 .login_auth_page .login__button {
-    padding: 3px 24px;
+    width: 230px;
+    height: 32px;
+    /* padding: 3px ; */
     color: #fff;
     border-radius: 3px;
     background-color: rgb(95, 157, 195);
     border: 1px solid rgb(95, 157, 195);
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.login_auth_page .login__button1 {
+    width: 230px;
+    height: 32px;
+    /* padding: 3px ; */
+    color: #fff;
+    border-radius: 3px;
+    background-color: rgb(95, 157, 195);
+    border: 1px solid rgb(95, 157, 195);
+    cursor: not-allowed;
     transition: 0.5s;
 }
 
