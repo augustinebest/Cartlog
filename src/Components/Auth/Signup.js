@@ -155,7 +155,7 @@ class Signup extends React.Component {
                                     onChange={this.handleChange}
                                     required />
                             </div>
-                            <button type='submit' className={loading ? 'login__button1' : 'login__button'}>SIGN UP
+                            <button type='submit' className={loading ? 'login__button1' : 'login__button'} disabled={loading ? true : false}>SIGN UP
                             {
                                     loading &&
                                     <Loader />
