@@ -1,13 +1,14 @@
 import React from 'react';
+import BodyWrapper from './bodyWrapper';
 
 class Categpries extends React.Component {
     render() {
         return (
             <div>
-                {this.props.children}
+                This is the Categories
             </div>
         )
     }
 }
 
-export default Categpries;
+export default BodyWrapper(Categpries);

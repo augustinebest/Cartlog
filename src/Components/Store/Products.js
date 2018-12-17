@@ -1,4 +1,5 @@
 import React from 'react';
+import BodyWrapper from './bodyWrapper';
 
 class Products extends React.Component {
     render() {
@@ -10,4 +11,4 @@ class Products extends React.Component {
     }
 }
 
-export default Products;
+export default BodyWrapper(Products);

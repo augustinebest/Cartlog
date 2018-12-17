@@ -90,7 +90,7 @@ class ForgotPassword extends React.Component {
             </div>
             <div className='col-md-8'>
             <div className='get__started'><span>Don't have an account? </span>&nbsp;&nbsp;&nbsp;&nbsp; <span className='button'><NavLink to='/signup' >GET STARTED</NavLink></span></div>
-                <div style={{marginTop: '200px'}} className='login_auth_page'>
+                <div style={{marginTop: '160px'}} className='login_auth_page'>
                 <h3>Retrive your account</h3>
                 <p>Enter your details below.</p>
                 {

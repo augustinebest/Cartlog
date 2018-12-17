@@ -67,7 +67,7 @@ class Signup extends React.Component {
                     'Content-Type': 'application/json'
                 }
             }).then(res => {
-                
+                console.log(res)
                 var result = res.data;
                 if (result.res === true) {
                     this.setState({
